@@ -50,14 +50,27 @@ public class RacingGame {
         return carNames;
 
     }
+            //몇회를 시행할지
+        private static int getNumberOfRaces(Scanner scanner) {
+        while (true) {
+            System.out.println(" \n몇회를 시행 할까요? ");
 
+            String input = scanner.nextLine();
 
-
-
+            //주사위 최소 입력 값이 정수인지 확인
+            if(input.matches("~!@#$%^&_=")) {
+            //정수면 반환
+            return Integer.parseInt(input);
+            } //정수가 아니면 에러메시지 발생
+            else {
+                throw new IllegalArgumentException("[ERROR] 숫자 1 이상 6이하의 숫자를 입력해야합니다. ");
+            }
 
     }
 
     }
+
+
 
 
 }
