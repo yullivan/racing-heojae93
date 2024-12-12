@@ -71,6 +71,16 @@ public class RacingGame {
     }
 
 
+    private static void conductRaces(List<String> carNames, int numberOfRaces) {
+        Map<String, Integer> Positions = new HashMap<>();
+        //자동차 초기 위치 설정
+        for (String name : carNames) {
+            Positions.put(name, 0);
+        }
+
+
+    }
+
 
 
 }
