@@ -137,7 +137,7 @@ public class RacingGame {
 
         //자동차 이름, 위치를 받아서 그에 해당하는 위치를 출력하는 함수
         public static void printCarPosition(String name, int position) {
-        System.out.println(name + "🚖" + " ".repeat(position));
+        System.out.println(name + "🚖" + "----".repeat(position));
     }
 
         // 우승자 발표
